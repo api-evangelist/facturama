@@ -1,0 +1,24 @@
+generated: '2026-07-19'
+method: searched
+source: https://apisandbox.facturama.mx/Docs
+docs: https://apisandbox.facturama.mx/Docs
+summary:
+  types: [http]
+  http_schemes: [basic]
+  api_key_in: []
+  oauth2_flows: []
+schemes:
+- name: BasicAuth
+  type: http
+  scheme: basic
+  description: >-
+    The Facturama API authenticates with HTTP Basic authentication. Clients send an
+    Authorization header of the form "Authorization: Basic <base64(username:password)>",
+    where the credentials are the API user/token pair created in the Facturama account
+    (distinct from the web login). The same scheme is used for the sandbox and
+    production hosts; only the base URL changes.
+  sources: [docs]
+notes:
+- API Web credentials are tied to a single Facturama account/issuer.
+- API Multiemisor uses account-level credentials to invoice on behalf of many taxpayers.
+- No OAuth 2.0 or OpenID Connect surface is documented; there is no scope model.
