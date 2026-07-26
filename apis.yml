@@ -1,7 +1,19 @@
 aid: facturama
 name: Facturama
-description: Facturama is a company surfaced as a portfolio company of 500-global and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Facturama is a cloud-based Mexican electronic invoicing (CFDI) platform that lets
+  businesses generate, stamp, download, and cancel digital tax receipts (Comprobante
+  Fiscal Digital por Internet) through a REST API. It serves 55,000+ clients — mostly
+  SMEs and startups — and exposes two API products: API Web (single issuer, tied to
+  a Facturama account) and API Multiemisor (multi-issuer, for platforms that invoice
+  on behalf of many taxpayers). The API supports CFDI 4.0 invoices, payroll receipts
+  (nómina), payment complements (complemento de pago), credit notes, Carta Porte
+  (cargo/transport), foreign trade (comercio exterior), and donation receipts, plus
+  management of clients, products/services, branch offices, series, and SAT catalogs
+  (postal codes, currencies, payment methods, tax regimes). Authentication is HTTP
+  Basic. A sandbox environment and 15 free test invoices during a 30-day trial are
+  available, along with first-party SDKs for PHP, Java, .NET, Node.js, JavaScript,
+  Python, and Ruby and a public Postman collection.
 url: https://raw.githubusercontent.com/api-evangelist/facturama/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,12 +21,63 @@ x-backed-by:
 - 500-global
 x-tier: stub
 x-tier-reason: portfolio-lead
+accessModel:
+  pricing: unknown
+  onboarding: self-serve
+  trial: false
+  try_now: false
+  public: false
+  label: Self-serve signup
+  confidence: medium
+  source:
+  - authentication
+  generated: '2026-07-22'
+  method: derived
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
+image: https://facturama.mx/img/home/plataforma-facturama.webp
 tags:
 - Company
-apis: []
+- Electronic Invoicing
+- CFDI
+- e-Invoicing
+- Mexico
+- Tax Compliance
+- SAT
+- Billing
+- Payroll
+- Finance
+- REST API
+apis:
+- name: Facturama API
+  description: >-
+    REST API for generating, stamping, downloading, and cancelling CFDI 4.0 electronic
+    invoices, payroll receipts, payment complements, and related Mexican tax documents,
+    plus management of clients, products, branch offices, series, and SAT catalogs.
+    Authentication is HTTP Basic. Available as API Web (single issuer) and API
+    Multiemisor (multi-issuer).
+  humanURL: https://apisandbox.facturama.mx/Docs
+  baseURL: https://api.facturama.mx
+  tags:
+  - Electronic Invoicing
+  - CFDI
+  - Mexico
+  properties:
+  - type: Documentation
+    url: https://apisandbox.facturama.mx/Docs
+  - type: APIReference
+    url: https://apisandbox.facturama.mx/Docs
+  - type: GettingStarted
+    url: https://apisandbox.facturama.mx/guias
+  - type: Authentication
+    url: authentication/facturama-authentication.yml
+  - type: Sandbox
+    url: sandbox/facturama-sandbox.yml
+  - type: Conventions
+    url: conventions/facturama-conventions.yml
+  - type: Conformance
+    url: conformance/facturama-conformance.yml
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
@@ -23,3 +86,50 @@ maintainers:
 common:
 - type: Website
   url: https://facturama.mx
+- type: DeveloperPortal
+  url: https://apisandbox.facturama.mx/Docs
+- type: Documentation
+  url: https://apisandbox.facturama.mx/Docs
+- type: APIReference
+  url: https://apisandbox.facturama.mx/Docs
+- type: GettingStarted
+  url: https://apisandbox.facturama.mx/guias
+- type: Support
+  url: https://soporte.facturama.mx/hc/es-mx
+- type: Blog
+  url: https://facturama.mx/blog
+- type: GitHubOrganization
+  url: https://github.com/Facturama
+- type: Pricing
+  url: https://facturama.mx/api-facturacion-electronica
+- type: SignUp
+  url: https://app.facturama.mx/web/registro
+- type: Login
+  url: https://dev.facturama.mx/api/login
+- type: TermsOfService
+  url: https://cdnfacturama.azureedge.net/content/docs/Facturama-terminos-y-condiciones-del-servicio.pdf
+- type: PrivacyPolicy
+  url: https://cdnfacturama.azureedge.net/content/docs/Aviso-De-Privacidad.pdf
+- type: Postman
+  url: https://github.com/Facturama/facturama-postman-sdk
+- type: Packages
+  url: packages/facturama-packages.yml
+- type: SDKs
+  url: packages/facturama-packages.yml
+- type: Authentication
+  url: authentication/facturama-authentication.yml
+- type: Sandbox
+  url: sandbox/facturama-sandbox.yml
+- type: Conventions
+  url: conventions/facturama-conventions.yml
+- type: Conformance
+  url: conformance/facturama-conformance.yml
+- type: LLMsTxt
+  url: llms/facturama-llms.txt
+- type: DomainSecurity
+  url: security/facturama-domain-security.yml
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence

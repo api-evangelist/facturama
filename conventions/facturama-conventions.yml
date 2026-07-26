@@ -1,0 +1,36 @@
+generated: '2026-07-19'
+method: searched
+source: https://apisandbox.facturama.mx/Docs
+docs: https://apisandbox.facturama.mx/Docs
+authentication:
+  style: http-basic
+  header: 'Authorization: Basic <base64(user:password)>'
+  ref: authentication/facturama-authentication.yml
+transport:
+  protocol: REST/HTTP
+  format: application/json
+  base_urls:
+    production: https://api.facturama.mx
+    sandbox: https://apisandbox.facturama.mx
+idempotency:
+  supported: false
+  note: No idempotency-key header or contract is documented in the public API docs.
+pagination:
+  documented: false
+  note: Not described in the reviewed docs excerpt; list endpoints exist for clients, products, and CFDIs.
+versioning:
+  scheme: host/path
+  note: Sandbox docs expose a Swagger v1 surface; version negotiation is by host and resource path rather than a version header.
+error_envelope:
+  documented: false
+  note: >-
+    Errors are returned as HTTP status codes with a JSON body; the docs do not
+    publish an RFC 9457 problem+json contract.
+catalogs:
+  note: >-
+    Requests reference SAT catalogs (postal codes, currencies, payment forms/methods,
+    tax regimes, unit codes) exposed via read-only catalog endpoints.
+related:
+  authentication: authentication/facturama-authentication.yml
+  sandbox: sandbox/facturama-sandbox.yml
+  conformance: conformance/facturama-conformance.yml

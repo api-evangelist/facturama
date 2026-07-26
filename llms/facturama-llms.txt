@@ -1,0 +1,37 @@
+# Facturama
+
+> Facturama is a cloud-based Mexican electronic invoicing (CFDI) platform. Its REST API generates, stamps, downloads, and cancels CFDI 4.0 digital tax receipts — invoices, payroll (nómina), payment complements, credit notes, Carta Porte, foreign trade, and donation receipts — plus management of clients, products, branch offices, series, and SAT catalogs. Authentication is HTTP Basic. Two products: API Web (single issuer) and API Multiemisor (multi-issuer).
+
+## APIs
+- [Facturama API docs](https://apisandbox.facturama.mx/Docs): REST API reference (sandbox host).
+- [API product page](https://facturama.mx/api-facturacion-electronica): API Web and API Multiemisor overview and plans.
+- Production base URL: https://api.facturama.mx
+- Sandbox base URL: https://apisandbox.facturama.mx
+
+## Docs
+- [Getting started / guides](https://apisandbox.facturama.mx/guias)
+- [Developer login](https://dev.facturama.mx/api/login)
+- [Support (Spanish)](https://soporte.facturama.mx/hc/es-mx)
+- [Blog](https://facturama.mx/blog)
+
+## SDKs
+- [PHP SDK](https://github.com/Facturama/facturama-php-sdk)
+- [.NET SDK](https://github.com/Facturama/facturama-dotnet-sdk)
+- [Java SDK](https://github.com/Facturama/facturama-java-sdk)
+- [Python SDK](https://github.com/Facturama/facturama-python-sdk)
+- [JavaScript SDK](https://github.com/Facturama/facturama-javascript-sdk)
+- [Node.js SDK](https://github.com/Facturama/facturama-nodejs-sdk)
+- [Ruby SDK](https://github.com/Facturama/facturama-ruby-sdk)
+- [Postman collection](https://github.com/Facturama/facturama-postman-sdk)
+
+## Legal
+- [Terms of Service (PDF)](https://cdnfacturama.azureedge.net/content/docs/Facturama-terminos-y-condiciones-del-servicio.pdf)
+- [Privacy Policy (PDF)](https://cdnfacturama.azureedge.net/content/docs/Aviso-De-Privacidad.pdf)
+
+## Artifacts
+- [API Evangelist profile](https://raw.githubusercontent.com/api-evangelist/facturama/refs/heads/main/apis.yml)
+- Authentication: authentication/facturama-authentication.yml
+- Packages / SDKs: packages/facturama-packages.yml
+- Conventions: conventions/facturama-conventions.yml
+- Conformance: conformance/facturama-conformance.yml
+- Sandbox: sandbox/facturama-sandbox.yml

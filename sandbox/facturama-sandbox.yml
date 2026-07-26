@@ -1,0 +1,33 @@
+generated: '2026-07-19'
+method: searched
+source: https://apisandbox.facturama.mx/Docs
+docs: https://apisandbox.facturama.mx/Docs
+environments:
+- name: sandbox
+  description: >-
+    Free test environment for building and validating integrations. CFDIs stamped
+    here are not fiscally valid. Documentation and interactive guides live on the
+    sandbox host.
+  api_base_url: https://apisandbox.facturama.mx
+  docs_url: https://apisandbox.facturama.mx/Docs
+  guides_url: https://apisandbox.facturama.mx/guias
+  login_url: https://dev.facturama.mx/api/login
+- name: production
+  description: Live environment; stamped CFDIs are fiscally valid and registered with the SAT.
+  api_base_url: https://api.facturama.mx
+separation:
+  model: distinct-hosts
+  note: >-
+    Test and live traffic are separated by host (apisandbox.facturama.mx / dev.facturama.mx
+    for testing vs api.facturama.mx for production), not by key prefix. HTTP Basic
+    credentials are issued per environment.
+trial:
+  free_invoices: 15
+  trial_days: 30
+  note: New accounts receive 15 complimentary invoices during a 30-day trial.
+test_values:
+  note: >-
+    Facturama does not publish a fixed catalog of magic test identifiers on the public
+    docs excerpt reviewed; issuers test with their own sandbox RFC and SAT test
+    certificates (CSD). No verbatim test card/RFC values are recorded here to avoid
+    fabrication.

@@ -1,0 +1,72 @@
+generated: '2026-07-19'
+method: searched
+source: https://github.com/Facturama
+packages:
+- language: php
+  registry: packagist
+  name: facturama/facturama-php-sdk
+  url: https://packagist.org/packages/facturama/facturama-php-sdk
+  repo: https://github.com/Facturama/facturama-php-sdk
+  install: composer require facturama/facturama-php-sdk
+  official: true
+  note: Supports API Web and API Multiemisor.
+- language: dotnet
+  registry: github
+  name: facturama-dotnet-sdk
+  url: https://github.com/Facturama/facturama-dotnet-sdk
+  repo: https://github.com/Facturama/facturama-dotnet-sdk
+  official: true
+  note: C# SDK for API Web and API Multiemisor.
+- language: java
+  registry: github
+  name: facturama-java-sdk
+  url: https://github.com/Facturama/facturama-java-sdk
+  repo: https://github.com/Facturama/facturama-java-sdk
+  official: true
+- language: python
+  registry: github
+  name: facturama-python-sdk
+  url: https://github.com/Facturama/facturama-python-sdk
+  repo: https://github.com/Facturama/facturama-python-sdk
+  official: true
+- language: javascript
+  registry: github
+  name: facturama-javascript-sdk
+  url: https://github.com/Facturama/facturama-javascript-sdk
+  repo: https://github.com/Facturama/facturama-javascript-sdk
+  official: true
+- language: javascript
+  registry: github
+  name: facturama-nodejs-sdk
+  url: https://github.com/Facturama/facturama-nodejs-sdk
+  repo: https://github.com/Facturama/facturama-nodejs-sdk
+  official: true
+  note: Base SDK for the Facturama e-invoicing API.
+- language: ruby
+  registry: github
+  name: facturama-ruby-sdk
+  url: https://github.com/Facturama/facturama-ruby-sdk
+  repo: https://github.com/Facturama/facturama-ruby-sdk
+  official: true
+- language: postman
+  registry: github
+  name: facturama-postman-sdk
+  url: https://github.com/Facturama/facturama-postman-sdk
+  repo: https://github.com/Facturama/facturama-postman-sdk
+  official: true
+  note: Public Postman collection for the Facturama API.
+unofficial:
+- language: python
+  registry: pypi
+  name: facturama
+  url: https://pypi.org/project/facturama/
+  version: 2.0.5.1
+  official: false
+  note: Third-party wrapper by tingsystems (github.com/tingsystems/facturama), not first-party.
+- language: ruby
+  registry: rubygems
+  name: facturama
+  url: https://rubygems.org/gems/facturama
+  version: 0.0.2
+  official: false
+  note: Third-party gem for the Web and Multiemisor APIs, not first-party.
