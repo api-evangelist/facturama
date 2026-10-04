@@ -52,9 +52,8 @@ modified: '2026-07-19'
 image: https://facturama.mx/img/home/plataforma-facturama.webp
 tags:
 - Company
-- Electronic Invoicing
-- CFDI
 - E-Invoicing
+- CFDI
 - Mexico
 - Tax Compliance
 - SAT
@@ -85,6 +84,10 @@ apis:
   humanURL: https://apisandbox.facturama.mx/Docs
   baseURL: https://api.facturama.mx
   tags:
+  - E-Invoicing
+  - CFDI
+  - Mexico
+  tags_raw:
   - Electronic Invoicing
   - CFDI
   - Mexico
