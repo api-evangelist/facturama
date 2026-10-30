@@ -64,6 +64,94 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Facturama is a company surfaced as a portfolio company of 500-global and added to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+Facturama is a cloud-based Mexican electronic invoicing (CFDI) platform that lets businesses generate, stamp, download, and cancel digital tax receipts (Comprobante Fiscal Digital por Internet) through a REST API. It serves 55,000+ clients — mostly SMEs and startups — and exposes two API products: API Web (single issuer, tied to a Facturama account) and API Multiemisor (multi-issuer, for platforms that invoice on behalf of many taxpayers). The API supports CFDI 4.0 invoices, payroll receipts (nómina), payment complements (complemento de pago), credit notes, Carta Porte (cargo/transport), foreign trade (comercio exterior), and donation receipts, plus management of clients, products/services, branch offices, series, and SAT catalogs (postal codes, currencies, payment methods, tax regimes). Authentication is HTTP Basic. A sandbox environment and 15 free test invoices during a 30-day trial are available, along with first-party SDKs for PHP, Java, .NET, Node.js, JavaScript, Python, and Ruby and a public Postman collection.
 
-Backed by: 500-global — https://facturama.mx
+**Areas:** Company · E-Invoicing · CFDI · Mexico · Tax Compliance · SAT · Billing · Payroll · Finance · REST API
+
+## Facturama on APIs.io
+
+Everything profiled for Facturama is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/facturama/](https://apis.io/providers/facturama/)** — or go straight to one of the APIs or properties below.
+
+### APIs (1)
+
+- [Facturama API](https://apis.io/apis/facturama/facturama-api/) — REST API for generating, stamping, downloading, and cancelling CFDI 4.0 electronic invoices, payroll receipts, payment complements, and related Mexican tax…
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### Security (2)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Facturama Authentication](https://apis.io/security/facturama/facturama-authentication/)
+- [Facturama Domain Security](https://apis.io/security/facturama/facturama-domain-security/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://facturama.mx)
+- [Documentation](https://apisandbox.facturama.mx/Docs)
+- [Getting started](https://apisandbox.facturama.mx/guias)
+- [API reference](https://apisandbox.facturama.mx/Docs)
+- [Pricing](https://facturama.mx/api-facturacion-electronica)
+- [Sign up](https://app.facturama.mx/web/registro)
+- [Support](https://soporte.facturama.mx/hc/es-mx)
+- [Blog](https://facturama.mx/blog/)
+- [Terms of service](https://cdnfacturama.azureedge.net/content/docs/Facturama-terminos-y-condiciones-del-servicio.pdf)
+- [Privacy policy](https://cdnfacturama.azureedge.net/content/docs/Aviso-De-Privacidad.pdf)
+- [GitHub](https://github.com/Facturama)
+
+## API Evangelist rating
+
+**Kin Score 33.9** — thin · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 73.2 |
+| Contract quality | 0.0 |
+| Contract governance | 18.2 |
+| Operational transparency | 2.6 |
+| Developer ergonomics | 71.4 |
+| Access clarity | 44.7 |
+
+**Agent readiness 2.5** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | bearer (partial credit) |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 24.5** — Employment & Payroll
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/facturama/](https://apis.io/providers/facturama/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Facturama: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/facturama/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
